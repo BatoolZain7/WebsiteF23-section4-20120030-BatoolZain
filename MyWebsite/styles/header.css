@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /*overflow-x: hidden;*/
+    max-width: 100%;
+}
+header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+nav{
+    background-color: #f7b41b;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    /*line-height: 50px;*/
+    padding: 0 100px 0 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Skranji', cursive;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+nav ul li a.active, nav ul li a:hover{
+    background: #69140e;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    /*line-height: 70px;*/
+    height: 70px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card1{
+    grid-column: 1;
+}
+.card2{
+    grid-column: 2;
+}
+.card3{
+    grid-column: 3;
+}
+.gridContainer img{
+    width: 200px;
+    height: 200px;
+}*/
+/*.introImg{ // crispy red #ff2643, lets check colros if good togather from colors websites
+    background-color: #f7b41b;
+    justify-content: center;
+    align-items: center;
+}*/
+.introImg img{
+    width: 100%;
+    object-fit: contain;
+}
+/*@media (max-width: 1050px){
+    label.logo{
+        float: left;
+        padding: 0 0 0 80px;
+    }
+}*/
+
+@media (max-width: 1024px){
+    .checkbtn{
+        display: block;
+    }
+    label.logo{
+        font-size: 30px;
+        padding: 0 0 0 100px;
+        float: left;
+    }
+    
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #69140e;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
+
+@media (max-width: 600px){
+    /*label.logo{
+        padding: 0 80px;
+    }*/
+    label.logo{
+        padding: 0 0 0 50px;
+    }
+}

@@ -1,0 +1,30 @@
+.pageTitle{
+    margin: 20px 0;
+    color: #3c1518;
+}
+
+.listArea{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.listArea .card-header{
+    text-align: center;
+    background-color: #69140e;
+    color: #fff;
+}
+.listArea .card{
+    margin-bottom: 20px;
+    text-align: left;
+    color: #3c1518;
+}
+
+.listArea .card .content-name{
+    font-weight: bold;
+}
+@media(max-width: 768px){
+    .listArea{
+        display: block;
+    }
+}
