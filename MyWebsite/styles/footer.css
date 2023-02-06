@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap');
+body{
+    position: relative;
+    height: 100%;
+}
 footer{
     background-color: #f7b41b;
     /*height: auto;*/
     width: 100%;
-    padding-top: 10px;
+    padding-top: 5px;
     color: #fff;
     margin-top: 20px;
-    /*position: fixed;
-    bottom: 0;*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 .footer-content{
     margin: 0 8%;

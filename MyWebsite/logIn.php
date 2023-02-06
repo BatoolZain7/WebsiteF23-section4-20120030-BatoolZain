@@ -47,10 +47,6 @@
                 element.classList.add("active");
             </script>
         </header>
-        <section>
-            <div class="imgBox">
-                <img id="logIn" src="images/registrationImg.jpg">
-            </div>
             <div class="contentBox">
                 <div class="formBox">
                     <h2>Log  in</h2>
@@ -72,7 +68,6 @@
                     </form>
                 </div>
             </div>
-        </section>
         <?php
             echo 
             '<script type="text/JavaScript">

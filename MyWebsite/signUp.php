@@ -36,12 +36,10 @@
         <header>
             <?php require('header.php'); ?>
         </header>
-        <section>
             <div class="contentBox">
                 <div class="formBox">
                     <h2>Sign up</h2>
                     <form method="POST">
-                        <div class="name">
                         <div class="inputBox nameField">
                             <label for="firstName">First name</label>
                             <input type="text" name="firstName" id="firstName" required>
@@ -49,7 +47,7 @@
                         <div class="inputBox nameField lastName">
                             <label for="lastName">Last name</label>
                             <input type="text" name="lastName" id="lastName" required>
-                        </div></div>
+                        </div>
                         <div class="inputBox">
                             <label for="phoneNumber">phone number</label>
                             <input type="text" name="phoneNumber" id="phoneNumber" required>
@@ -75,8 +73,6 @@
                     </form>
                 </div>
             </div>
-            <div class="imgBox"><img id="signUp" src="images/registrationImg.jpg"></div>
-        </section>
         <?php
             echo 
             '<script type="text/JavaScript">
